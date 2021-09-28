@@ -99,7 +99,7 @@ var qaList = [
     function answer() { // 回答問題
 	
 	var r = getAnswer();
-	ThunkableWebviewerExtension.postMessage('hello world');
+	ThunkableWebviewerExtension.postMessage(r);
 	
       setTimeout(function () { // 停頓 1 到 3 秒再回答問題 (因為若回答太快就不像人了，人打字需要時間)
         append(">> "+getAnswer());
